@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 services:
   media-server:
     build:
@@ -9,7 +9,8 @@ services:
     ports:
       - 8000:8000
       - 1935:1935
-    command: ['yarn', 'start:dev']
+    command: ["yarn", "start:dev"]
     environment:
-      PUBLISH_START_NOTIFY_URL: ''
-      PUBLISH_STOP_NOTIFY_URL: ''
+      MEDIA_URL: "./media"
+      PUBLISH_START_NOTIFY_URL: ""
+      PUBLISH_STOP_NOTIFY_URL: ""
