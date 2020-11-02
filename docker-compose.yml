@@ -9,7 +9,7 @@ services:
     ports:
       - 8000:8000
       - 1935:1935
-    command: ["yarn", "start:dev"]
+    command: ["pm2-runtime", "src/index.js"]
     environment:
       FFMPEG_PATH: "/usr/bin/ffmpeg"
       MEDIA_URL: "./media"
