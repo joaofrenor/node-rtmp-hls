@@ -15,22 +15,22 @@ module.exports = {
     ffmpeg: process.env.FFMPEG_PATH || '/usr/bin/ffmpeg',
     tasks: [
       {
-        app: 'live',
+        app: 'stream',
         mode: 'push',
         edge: 'rtmp://127.0.0.1/hls_1080p',
       },
       {
-        app: 'live',
+        app: 'strean',
         mode: 'push',
         edge: 'rtmp://127.0.0.1/hls_720p',
       },
       {
-        app: 'live',
+        app: 'stream',
         mode: 'push',
         edge: 'rtmp://127.0.0.1/hls_480p',
       },
       {
-        app: 'live',
+        app: 'stream',
         mode: 'push',
         edge: 'rtmp://127.0.0.1/hls_360p',
       },
