@@ -44,7 +44,7 @@ module.exports = {
         hls: true,
         ac: 'aac',
         acParam: ['-b:a', '192k', '-ar', 48000],
-        vcParams: [
+        vcParam: [
           '-vf',
           "'scale=1920:-1'",
           '-b:v',
@@ -63,7 +63,7 @@ module.exports = {
         hls: true,
         ac: 'aac',
         acParam: ['-b:a', '128k', '-ar', 48000],
-        vcParams: [
+        vcParam: [
           '-vf',
           "'scale=1280:-1'",
           '-b:v',
@@ -82,7 +82,7 @@ module.exports = {
         hls: true,
         ac: 'aac',
         acParam: ['-b:a', '128k', '-ar', 48000],
-        vcParams: [
+        vcParam: [
           '-vf',
           "'scale=854:-1'",
           '-b:v',
@@ -101,7 +101,7 @@ module.exports = {
         hls: true,
         ac: 'aac',
         acParam: ['-b:a', '96k', '-ar', 48000],
-        vcParams: [
+        vcParam: [
           '-vf',
           "'scale=480:-1'",
           '-b:v',
