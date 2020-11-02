@@ -16,6 +16,8 @@ RUN yarn install --silent
 
 RUN yarn global add nodemon
 
+RUN yarn global add pm2
+
 RUN which ffmpeg
 
 EXPOSE 8000
