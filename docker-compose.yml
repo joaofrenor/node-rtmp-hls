@@ -9,9 +9,9 @@ services:
     ports:
       - 8000:8000
       - 1935:1935
-    command: ["yarn", "start:dev"]
+    command: ["pm2-runtime", "src/index.js"]
     environment:
       FFMPEG_PATH: "/usr/bin/ffmpeg"
       MEDIA_URL: "./media"
-      PUBLISH_START_NOTIFY_URL: ""
-      PUBLISH_STOP_NOTIFY_URL: ""
+      PM2_PUBLIC_KEY: "cqbdc12gzntshgl"
+      PM2_SECRET_KEY: "dc664de7cm1igyk"
