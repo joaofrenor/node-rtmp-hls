@@ -27,4 +27,4 @@ EXPOSE 1935
 ENV PM2_PUBLIC_KEY cqbdc12gzntshgl
 ENV PM2_SECRET_KEY dc664de7cm1igyk
 
-CMD ["pm2-runtime", "app.js"]
+CMD ["pm2-runtime", "src/index.js"]
