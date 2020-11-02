@@ -12,7 +12,7 @@ module.exports = {
     mediaroot: process.env.MEDIA_ROOT || "./media",
   },
   trans: {
-    ffmpeg: "/usr/local/bin/ffmpeg",
+    ffmpeg: process.env.FFMPEG_PATH || "/usr/local/bin/ffmpeg",
     tasks: [
       {
         app: "stream",
@@ -22,7 +22,7 @@ module.exports = {
     ],
   },
   fission: {
-    ffmpeg: "/usr/local/bin/ffmpeg",
+    ffmpeg: process.env.FFMPEG_PATH || "/usr/local/bin/ffmpeg",
     tasks: [
       {
         rule: "stream/*",

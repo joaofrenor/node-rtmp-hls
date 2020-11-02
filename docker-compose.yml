@@ -11,6 +11,7 @@ services:
       - 1935:1935
     command: ["yarn", "start:dev"]
     environment:
+      FFMPEG_PATH: "/usr/bin/ffmpeg"
       MEDIA_URL: "./media"
       PUBLISH_START_NOTIFY_URL: ""
       PUBLISH_STOP_NOTIFY_URL: ""
