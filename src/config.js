@@ -89,7 +89,7 @@ module.exports = {
         ac: "aac",
         acParam: ["-b:a", "192k", "-ar", 48000],
         vcParam: [],
-        hlsFlags: "[hls_time=10:hls_list_size=0:hls_flags=delete_segments]",
+        hlsFlags: "[hls_time=3:hls_list_size=10:hls_flags=delete_segments]",
       },
       {
         app: "hls_720p",
@@ -97,7 +97,7 @@ module.exports = {
         ac: "aac",
         acParam: ["-b:a", "128k", "-ar", 48000],
         vcParam: [],
-        hlsFlags: "[hls_time=10:hls_list_size=0:hls_flags=delete_segments]",
+        hlsFlags: "[hls_time=3:hls_list_size=10:hls_flags=delete_segments]",
       },
       {
         app: "hls_480p",
@@ -105,7 +105,7 @@ module.exports = {
         ac: "aac",
         acParam: ["-b:a", "128k", "-ar", 48000],
         vcParams: [],
-        hlsFlags: "[hls_time=10:hls_list_size=0:hls_flags=delete_segments]",
+        hlsFlags: "[hls_time=3:hls_list_size=10:hls_flags=delete_segments]",
       },
       {
         app: "hls_360p",
@@ -113,7 +113,7 @@ module.exports = {
         ac: "aac",
         acParam: ["-b:a", "96k", "-ar", 48000],
         vcParams: [],
-        hlsFlags: "[hls_time=10:hls_list_size=0:hls_flags=delete_segments]",
+        hlsFlags: "[hls_time=3:hls_list_size=10:hls_flags=delete_segments]",
       },
     ],
   },
