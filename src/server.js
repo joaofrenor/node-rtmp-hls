@@ -43,8 +43,9 @@ nms.on("prePublish", async (id, StreamPath, args) => {
 
 nms.on("postPublish", async (_id, StreamPath, _args) => {
   console.log(StreamPath);
-  if (StreamPath.indexOf("hls_") != -1) {
-    const name = StreamPath.split("/").pop();
+  if (StreamPath.indexOf("/stream") != -1) {
+    const name = StreamPath.split("/").pop().split("_")[0];
+    console.log(name);
     createPlaylist(name);
   }
 });
