@@ -17,8 +17,7 @@ const template = (name) => {
 //   line += `#EXT-X-STREAM-INF:BANDWIDTH=2800000,RESOLUTION=1280x720\n./../../hls_720p/${name}/index.m3u8\n`
 //   line += `#EXT-X-STREAM-INF:BANDWIDTH=5000000,RESOLUTION=1920x1080\n./../../hls_1080p/${name}/index.m3u8`
 //   return line
-}
-
+// }
 
 module.exports = (name) => {
   return new Promise((resolve, reject) => {
