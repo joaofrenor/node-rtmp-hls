@@ -29,7 +29,7 @@ module.exports = {
         model: [
           {
             ab: "192k",
-            vb: "5000k",
+            vb: "3000k",
             vs: "1902x1080",
             vf: "30",
           },
