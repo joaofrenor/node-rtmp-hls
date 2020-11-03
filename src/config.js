@@ -21,40 +21,40 @@ module.exports = {
       },
     ],
   },
-  fission: {
-    ffmpeg: process.env.FFMPEG_PATH || "/usr/local/bin/ffmpeg",
-    tasks: [
-      {
-        rule: "stream/*",
-        model: [
-          {
-            ab: "192k",
-            vb: "3000k",
-            vs: "1902x1080",
-            vf: "30",
-          },
-          {
-            ab: "128k",
-            vb: "1500k",
-            vs: "1280x720",
-            vf: "30",
-          },
-          {
-            ab: "96k",
-            vb: "1000k",
-            vs: "854x480",
-            vf: "30",
-          },
-          {
-            ab: "96k",
-            vb: "600k",
-            vs: "640x360",
-            vf: "30",
-          },
-        ],
-      },
-    ],
-  },
+  // fission: {
+  //   ffmpeg: process.env.FFMPEG_PATH || "/usr/local/bin/ffmpeg",
+  //   tasks: [
+  //     {
+  //       rule: "stream/*",
+  //       model: [
+  //         {
+  //           ab: "192k",
+  //           vb: "3000k",
+  //           vs: "1902x1080",
+  //           vf: "30",
+  //         },
+  //         {
+  //           ab: "128k",
+  //           vb: "1500k",
+  //           vs: "1280x720",
+  //           vf: "30",
+  //         },
+  //         {
+  //           ab: "96k",
+  //           vb: "1000k",
+  //           vs: "854x480",
+  //           vf: "30",
+  //         },
+  //         {
+  //           ab: "96k",
+  //           vb: "600k",
+  //           vs: "640x360",
+  //           vf: "30",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   // trans: {
   //   ffmpeg: "/usr/local/bin/ffmpeg",
   //   tasks: [
