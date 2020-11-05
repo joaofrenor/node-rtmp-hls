@@ -13,8 +13,8 @@ module.exports = {
   },
   https: {
     port: 80,
-    key: "./ssl/fullchain.pem",
-    cert: "./ssl/privkey.pem",
+    key: "./ssl/privkey.pem",
+    cert: "./ssl/fullchain.pem",
   },
   trans: {
     ffmpeg: process.env.FFMPEG_PATH || "/usr/local/bin/ffmpeg",
