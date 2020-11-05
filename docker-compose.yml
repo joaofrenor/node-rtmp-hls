@@ -6,6 +6,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./media:/app/media
+      - ./ssl:/app/ssl
     ports:
       - 8000:8000
       - 1935:1935
