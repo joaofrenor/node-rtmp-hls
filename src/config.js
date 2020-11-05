@@ -13,8 +13,8 @@ module.exports = {
   },
   https: {
     port: 8443,
-    key: "/etc/letsencrypt/live/renor.me/privkey.pem",
-    cert: "/etc/letsencrypt/live/renor.me/fullchain.pem",
+    key: "./ssl/privkey.pem",
+    cert: "./ssl/fullchain.pem",
   },
   trans: {
     ffmpeg: process.env.FFMPEG_PATH || "/usr/local/bin/ffmpeg",
