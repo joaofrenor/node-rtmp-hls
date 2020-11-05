@@ -11,6 +11,11 @@ module.exports = {
     allow_origin: "*",
     mediaroot: process.env.MEDIA_ROOT || "./media",
   },
+  https: {
+    port: 80,
+    key:'/etc/letsencrypt/live/renor.me/fullchain.pem',
+    cert:'/etc/letsencrypt/live/renor.me/privkey.pem',
+  }
   trans: {
     ffmpeg: process.env.FFMPEG_PATH || "/usr/local/bin/ffmpeg",
     tasks: [
