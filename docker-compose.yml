@@ -9,6 +9,7 @@ services:
       - ./ssl:/app/ssl
     ports:
       - 8000:8000
+      - 8443:8443
       - 1935:1935
     command: ["pm2-runtime", "src/index.js"]
     environment:
