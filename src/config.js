@@ -12,9 +12,9 @@ module.exports = {
     mediaroot: process.env.MEDIA_ROOT || "./media",
   },
   https: {
-    port: 80,
-    key: "./ssl/privkey.pem",
-    cert: "./ssl/fullchain.pem",
+    port: 8443,
+    key: "./privkey.pem",
+    cert: "./fullchain.pem",
   },
   trans: {
     ffmpeg: process.env.FFMPEG_PATH || "/usr/local/bin/ffmpeg",
